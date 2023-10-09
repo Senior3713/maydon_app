@@ -1,4 +1,4 @@
-import 'package:maydon_app/models/stadium_model/stadium_model.dart';
+import 'package:maydon_app/domain/models/stadium_model/stadium_model.dart';
 
 class Admin {
   final String id;
@@ -9,7 +9,7 @@ class Admin {
   final String imageAdmin;
   final String phoneNumber;
   final StadiumModel stadium;
-  
+
   Admin({
     required this.id,
     required this.firstName,
@@ -34,3 +34,4 @@ class Admin {
     );
   }
 }
+

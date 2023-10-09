@@ -1,4 +1,4 @@
-import 'package:maydon_app/models/stadium_model/location_model.dart';
+import 'package:maydon_app/domain/models/stadium_model/location_model.dart';
 
 class HistoryModel {
   final DateTime from;

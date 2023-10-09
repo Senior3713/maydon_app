@@ -1,4 +1,4 @@
-import 'package:maydon_app/models/user_model/history_model.dart';
+import 'package:maydon_app/domain/models/user_model/history_model.dart';
 
 class UserModel {
   final String id;
@@ -33,5 +33,16 @@ class UserModel {
       history: (json["history"] as List).map((e) => HistoryModel.fromJson(json["history"] as Map<String, Object?>)).toList(),
     );
   }
+
+  Map<String, Object?> toJson() => {
+    "id": id,
+    "fullName": fullName,
+    "email": email,
+    "password": password,
+    "phoneNumber": phoneNumber,
+    "favoriteList": favoriteList,
+    "token": token,
+    "history": history,
+  };
 }
 
