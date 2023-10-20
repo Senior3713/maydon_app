@@ -34,14 +34,14 @@ class _WalkThroughScreenState extends State<WalkThroughScreen> {
   }
 
   List<String> subTitle = [
-    t14_WalkThrough2_SubTitle,
-    t14_WalkThrough3_SubTitle,
-    t14_WalkThrough4_SubTitle
+walkThroughSubTitle,
+walkThroughSubTitle,
+walkThroughSubTitle,
   ];
   List<String> title = [
-    t14_WalkThrough2_Title,
-    t14_WalkThrough3_Title,
-    t14_WalkThrough4_Title
+    walkThroughTitle,
+    walkThroughTitle,
+    walkThroughTitle,
   ];
   List<Widget> pages = [
     const WalkViewComp(
@@ -138,8 +138,8 @@ class _WalkThroughScreenState extends State<WalkThroughScreen> {
                         children: [
                           Text(
                             currentPage == 2
-                                ? t14_btn_WalkThrough2Start
-                                : t14_lbl_SignIn3,
+                                ? btnWalkThroughStart
+                                : lblSignIn,
                             style: const TextStyle(
                               color: Colors.white,
                               fontSize: 14,
