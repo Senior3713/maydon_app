@@ -1,16 +1,21 @@
-class LatLng {
+class LatLngModel {
   double lat;
   double lng;
 
-  LatLng({
+  LatLngModel({
     required this.lat,
     required this.lng,
   });
 
-  factory LatLng.fromJson(Map<String, Object?> json) {
-    return LatLng(
+  factory LatLngModel.fromJson(Map<String, Object?> json) {
+    return LatLngModel(
       lat: json["lat"] as double,
       lng: json["lng"] as double,
     );
+  }
+
+  @override
+  String toString() {
+    return 'LatLng{lat: $lat, lng: $lng}';
   }
 }

@@ -9,7 +9,7 @@ sealed class DBService {
     try {
       final folder = db.ref(Folder.user).child(userUid);
 
-      final user = UserModel(id: userUid, fullName: username, email: email, password: password, phoneNumber: phone, token: "",);
+      final user = UserModel(id: userUid, fullName: username, email: email, password: password, fcmToken: "",);
       await folder.set(user.toJson());
       return true;
     } catch(e) {

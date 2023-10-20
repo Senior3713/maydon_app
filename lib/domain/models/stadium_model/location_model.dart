@@ -4,7 +4,7 @@ class LocationStadium {
   String region;
   String district;
   String street;
-  LatLng latLng;
+  LatLngModel latLng;
 
   LocationStadium({
     required this.region,
@@ -18,7 +18,12 @@ class LocationStadium {
       region: json["region"] as String,
       district: json["district"] as String,
       street: json["street"] as String,
-      latLng: LatLng.fromJson(json["latlng"] as Map<String, Object?>),
+      latLng: LatLngModel.fromJson(json["latlng"] as Map<String, Object?>),
     );
+  }
+
+  @override
+  String toString() {
+    return 'LocationStadium{region: $region, district: $district, street: $street, latLng: $latLng}';
   }
 }
