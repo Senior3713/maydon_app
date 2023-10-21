@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:maydon_app/presentation/pages/profile_page.dart';
+import 'package:maydon_app/presentation/pages/main_page.dart';
 
 class MaydonApp extends StatelessWidget {
   const MaydonApp({super.key});
@@ -7,11 +7,11 @@ class MaydonApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: const ProfilePage(),
+      home: const MainPage(),
       debugShowCheckedModeBanner: false,
-      themeMode: ThemeMode.dark,
       theme: ThemeData.light(useMaterial3: true),
       darkTheme: ThemeData.dark(useMaterial3: true),
     );
   }
 }
+
